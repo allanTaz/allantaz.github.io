@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Factory TD - Allan Tazhenov</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-3xl font-bold">Allan Tazhenov</a>
+                <div class="space-x-4">
+                    <a href="index.html" class="hover:text-blue-400">Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-8 flex-grow">
+        <!-- Game Header -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold mb-4">Sci-Factory TD</h1>
+            <p class="text-xl text-gray-400">Development time: 6 weeks</p>
+        </div>
+
+        <!-- Featured Video -->
+        <div class="mb-12">
+            <div class="relative w-full h-[400px] rounded-lg overflow-hidden shadow-xl">
+                <video 
+                    class="w-full h-full object-cover"
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                >
+                    <source src="videos/mainVideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Game Overview -->
+        <div class="bg-gray-800 rounded-lg p-6 mb-12">
+            <h2 class="text-2xl font-bold mb-4">About the Game</h2>
+            <p class="text-gray-400 mb-4">
+                <p class="text-gray-300 mb-6">
+        Imagine running your own base where you can mine cool resources AND build awesome defense towers! It's like having a factory and a fortress all in one.
+    </p>
+
+    <h3 class="text-xl font-bold mb-3 text-white">What makes it fun?</h3>
+    <ul class="list-none space-y-2 mb-6">
+        <li class="flex items-start space-x-2">
+            <span class="text-blue-400 font-bold">•</span>
+            <span class="text-gray-300">Mine resources to power up your base</span>
+        </li>
+        <li class="flex items-start space-x-2">
+            <span class="text-blue-400 font-bold">•</span>
+            <span class="text-gray-300">Build towers to protect your precious Core</span>
+        </li>
+        <li class="flex items-start space-x-2">
+            <span class="text-blue-400 font-bold">•</span>
+            <span class="text-gray-300">Watch out for enemy spawners that roam around and team up with each other</span>
+        </li>
+        <li class="flex items-start space-x-2">
+            <span class="text-blue-400 font-bold">•</span>
+            <span class="text-gray-300">The longer you survive, the tougher it gets - enemies get stronger when their spawners merge together and become BIGGER!</span>
+        </li>
+    </ul>
+
+    <p class="text-gray-300 mb-6">
+        Think of it as playing with building blocks, but with an exciting twist - you need to keep the bad guys away from your Core while gathering everything you need to build better defenses. The more you build, the stronger you get... but the enemies are getting stronger too!
+    </p>
+
+    <p class="text-gray-300">
+        You can check the full code in my
+        <a href="https://github.com/allanTaz/Sci-Factory_TD" class="text-blue-400 hover:text-blue-300 underline">GitHub page</a> 
+    </p>
+            </p>
+        </div>
+
+        <!-- Game Mechanics Section -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold mb-6">Game Mechanics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Mechanic 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <div class="relative w-full h-48">
+                        <video 
+                            class="w-full h-full object-cover"
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline
+                        >
+                            <source src="videos/vortex.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Mine Resources!</h3>
+                        <p class="text-gray-400">
+                            There's only one resource collector available, so you must use a belt system to transport all the resources
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mechanic 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <div class="relative w-full h-48">
+                        <video 
+                            class="w-full h-full object-cover"
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline
+                        >
+                            <source src="videos/building.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Build towers!</h3>
+                        <p class="text-gray-400">
+                            Protect your base by building different types of towers. The more resources it requires to build the better the tower!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mechanic 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <div class="relative w-full h-48">
+                        <video 
+                            class="w-full h-full object-cover"
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline
+                        >
+                            <source src="videos/lightning.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Electric tower</h3>
+                        <p class="text-gray-400">
+                            This tower zaps enemies in its range up to 3 enemies at once! It chooses the closest enemies to the first target!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mechanic 4 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden">
+                    <div class="relative w-full h-48">
+                        <video 
+                            class="w-full h-full object-cover"
+                            autoplay 
+                            loop 
+                            muted 
+                            playsinline
+                        >
+                            <source src="videos/mine.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Red Ore Mines</h3>
+                        <p class="text-gray-400">
+                            You might even need to utilize resources to defend your base. This system places the mines created from red ore, which, when stepped on, will explode
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

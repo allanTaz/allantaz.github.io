@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allan Tazhenov - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-3xl font-bold">Allan Tazhenov</a>
+                <div class="space-x-6">
+                    <a href="#about" class="hover:text-blue-400 nav-link">About</a>
+                    <a href="#portfolio" class="hover:text-blue-400 nav-link">Portfolio</a>
+                    <a href="#contact" class="hover:text-blue-400 nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Profile -->
+    <section id="about" class="bg-gray-800 scroll-mt-20">
+        <!-- Rest of the about section content remains the same -->
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <img src="images/Photo.jfif" alt="Allan Tazhenov" class="rounded-full w-64 h-64 mx-auto md:mx-0 object-cover shadow-xl">
+                </div>
+                <div>
+                    <h1 class="text-4xl font-bold mb-4">Allan Tazhenov</h1>
+                    <h2 class="text-2xl text-blue-400 mb-4">Game Developer & Software Developer</h2>
+                    <p class="text-gray-300 mb-6">
+                        A highly versatile game developer with expertise in Unity and Unreal Engine development. Passionate about creating immersive gaming experiences and innovative technical solutions. Specialized in AI integration, body tracking and optimization
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/allanTaz" class="text-gray-300 hover:text-blue-400">
+                            <i data-feather="github" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container mx-auto px-6 py-12">
+        <h2 class="text-2xl font-bold mb-8">Skills & Expertise</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <i data-feather="monitor" class="w-8 h-8 mb-4 text-blue-400"></i>
+                <h3 class="font-bold mb-2">Game Development</h3>
+                <p class="text-gray-400">Unity, Unreal Engine, Game Design</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <i data-feather="code" class="w-8 h-8 mb-4 text-blue-400"></i>
+                <h3 class="font-bold mb-2">Programming</h3>
+                <p class="text-gray-400">C#, C++, Python, Java, JavaScript, Git</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <i data-feather="award" class="w-8 h-8 mb-4 text-blue-400"></i>
+                <h3 class="font-bold mb-2">Achievements</h3>
+                <p class="text-gray-400">Government Grants, Key Contracts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container mx-auto px-6 py-12 scroll-mt-20">
+        <h2 class="text-2xl font-bold mb-8">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+                <div class="relative w-full h-48">
+                    <video 
+                        class="w-full h-full object-cover"
+                        autoplay 
+                        loop 
+                        muted 
+                        playsinline
+                    >
+                        <source src="videos/mainVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Sci-Factory TD</h3>
+                    <p class="text-gray-400 mb-4">Tower Defense with elements of resource management</p>
+                    <a href="game1.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 scroll-mt-20">
+        <div class="container mx-auto px-6 py-12">
+            <h2 class="text-2xl font-bold mb-8">Get in Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="mail" class="w-5 h-5 text-blue-400"></i>
+                            <span>allantazh@gmail.com</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-feather="linkedin" class="w-5 h-5 text-blue-400"></i>
+                            <a href="https://www.linkedin.com/in/allan-tazhenov/" target="_blank" class="hover:text-blue-400">Allan Tazhenov</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Initialize Feather icons
+        feather.replace();
+
+        // Smooth scroll function
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    const headerOffset = 80; // Adjust this value based on your header height
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active link highlighting
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+
+        function updateActiveLink() {
+            const currentScroll = window.scrollY + window.innerHeight / 2;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (currentScroll >= sectionTop && currentScroll <= sectionBottom) {
+                    const correspondingLink = document.querySelector(`a[href="#${section.id}"]`);
+                    navLinks.forEach(link => link.classList.remove('text-blue-400'));
+                    if (correspondingLink) {
+                        correspondingLink.classList.add('text-blue-400');
+                    }
+                }
+            });
+        }
+
+        // Update active link on scroll
+        window.addEventListener('scroll', updateActiveLink);
+    </script>
+</body>
+</html>
