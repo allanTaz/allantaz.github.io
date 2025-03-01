@@ -1,0 +1,177 @@
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .skills-section, .portfolio-section {
+            position: relative;
+            background-color: rgba(0, 0, 0, 1);
+        }
+        
+        .eyes-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            overflow: hidden;
+        }
+        
+        .grid-overlay {
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+            pointer-events: none;
+            background-image: 
+                linear-gradient(rgba(0, 200, 255, 0.5) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 200, 255, 0.5) 1px, transparent 1px);
+            background-size: 50px 50px;
+            background-position: -1px -1px;
+        }
+        
+        .noise-overlay {
+            position: absolute;
+            inset: 0;
+            opacity: 0.05;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            background-size: cover;
+            mix-blend-mode: screen;
+        }
+        
+        .tech-eye {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            transition: transform 0.2s;
+            will-change: transform, filter;
+        }
+        
+        .eye-outline {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .sclera {
+            position: absolute;
+            inset: 1px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        
+        .scan-line {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: currentColor;
+            box-shadow: 0 0 8px currentColor;
+            opacity: 0.3;
+        }
+        
+        .iris {
+            position: absolute;
+            width: 75%;
+            height: 75%;
+            top: 12.5%;
+            left: 12.5%;
+            border-radius: 50%;
+            transition: transform 0.2s;
+        }
+        
+        .iris-pattern {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            overflow: hidden;
+            background: repeating-radial-gradient(
+                circle,
+                transparent 0%,
+                transparent 10%,
+                rgba(0, 0, 0, 0.2) 10.5%,
+                transparent 11%
+            );
+            background-size: 12px 12px;
+        }
+        
+        .iris-circuit {
+            position: absolute;
+            inset: 0;
+            opacity: 0.6;
+            background-image:
+                radial-gradient(circle at center, transparent 30%, rgba(0, 0, 0, 0.5) 31%, transparent 32%),
+                linear-gradient(0deg, transparent 40%, rgba(255, 255, 255, 0.1) 45%, rgba(255, 255, 255, 0.1) 55%, transparent 60%);
+            background-size: 15px 15px, 15px 15px;
+        }
+        
+        .pupil {
+            position: absolute;
+            width: 40%;
+            height: 40%;
+            top: 30%;
+            left: 30%;
+            border-radius: 50%;
+            background: #000;
+            transition: transform 0.2s;
+        }
+        
+        .pupil-reflection {
+            position: absolute;
+            width: 30%;
+            height: 30%;
+            top: 20%;
+            left: 20%;
+            border-radius: 50%;
+            background: white;
+            opacity: 0.4;
+        }
+        
+        .eyelid-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: #000;
+            border-radius: 50% 50% 0 0;
+            transform: translateY(-100%);
+            transition: transform 0.1s;
+            z-index: 20;
+        }
+        
+        .eyelid-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: #000;
+            border-radius: 0 0 50% 50%;
+            transform: translateY(100%);
+            transition: transform 0.1s;
+            z-index: 20;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .skills-section, .portfolio-section {
+            position: relative;
+        }
+        
+        .bg-gray-800 {
+            background-color: rgba(31, 41, 55, 0.95);
+        }
+        
+        .bg-gray-900 {
+            background-color: rgba(17, 24, 39, 0.95);
+        }
+        
+        section {
+            backdrop-filter: blur(1px);
+        }
